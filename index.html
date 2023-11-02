@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Taniti</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="index.html"><img src="images/tanitilogo167x55.jpg" alt="Taniti Logo"></a>
+    </div>
+    <div class="weather-link">
+      <a href="weather.html"><img src="images/weather.jpg" alt="Taniti Weather" width="80%" height="80%"></a>
+    </div>
+  <nav class="nav">
+    <ul>
+      <li><a href="accommodations.html">Accommodations</a></li>
+      <li><a href="attractions.html">Attractions</a></li>
+      <li><a href="transportation.html">Transportation</a></li>
+      <li><a href="faq.html">F.A.Q</a></li>
+    </ul>
+  </nav>
+  </header>
+  <p></p>
+  <main>
+  <div class="container">
+  <div class="slideshow-container">
+    <div class="slide">
+      <img src="images/slideshow1.jpg" alt="Image 1">
+    </div>
+    <div class="slide">
+      <img src="images/slideshow2.jpg" alt="Image 2">
+    </div>
+    <div class="slide">
+      <img src="images/slideshow3.jpg" alt="Image 3">
+    </div>
+  </div>
+  </div>
+  <section>
+    <div class="container4">
+        <img src="images/highlight1.jpg" alt="Highlight 1" class="highlighted">
+      <div class="text">
+        <h2>Highlighted Attraction</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+          incididunt ut labore et dolore magna aliqua. Aliquam eleifend mi in nulla posuere 
+          sollicitudin aliquam. Velit euismod in pellentesque massa placerat duis ultricies 
+          lacus. Diam volutpat commodo sed egestas. Bibendum est ultricies integer quis 
+          auctor. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed. Faucibus 
+          scelerisque eleifend donec pretium vulputate. Leo vel fringilla est ullamcorper eget nulla.</p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container4">
+      <div class="text">
+        <h2>Highlighted Attraction</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+          incididunt ut labore et dolore magna aliqua. Aliquam eleifend mi in nulla posuere 
+          sollicitudin aliquam. Velit euismod in pellentesque massa placerat duis ultricies 
+          lacus. Diam volutpat commodo sed egestas. Bibendum est ultricies integer quis 
+          auctor. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed. Faucibus 
+          scelerisque eleifend donec pretium vulputate. Leo vel fringilla est ullamcorper eget nulla.</p>
+      </div>
+        <img src="images/highlight2.jpg" alt="Highlight 2" class="highlighted">
+    </div>
+  </section>
+  <section>
+    <div class="container4">
+        <img src="images/highlight3.jpg" alt="Highlight 3" class="highlighted">
+      <div class="text">
+        <h2>Highlighted Attraction</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+          incididunt ut labore et dolore magna aliqua. Aliquam eleifend mi in nulla posuere 
+          sollicitudin aliquam. Velit euismod in pellentesque massa placerat duis ultricies 
+          lacus. Diam volutpat commodo sed egestas. Bibendum est ultricies integer quis 
+          auctor. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed. Faucibus 
+          scelerisque eleifend donec pretium vulputate. Leo vel fringilla est ullamcorper eget nulla.</p>
+      </div>
+    </div>
+  </section>
+</main>
+  <footer class="footer">
+    <p>Contact us: info@taniti.com | +1 123 456 7890<br><br>Images provided by Pixabay (https://pixabay.com/)<br>licensed under Creative Commons CC0, for royalty-free usage.</p>
+  </footer>
+
+  <script>
+    function handleSlideshow() {
+      const slides = document.querySelectorAll('.slide');
+      let currentSlide = 0;
+
+      function showSlide() {
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[currentSlide].classList.add('active');
+      }
+
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide();
+      }
+
+      showSlide();
+      setInterval(nextSlide, 5000);
+    }
+
+    handleSlideshow();
+
+  </script>
+</body>
+</html>
